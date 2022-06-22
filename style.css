@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Ubuntu:wght@300;400;500&display=swap');
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#bg{
+    background-image: url(images/bg.jpg);
+    background-repeat: no-repeat; 
+    height: 150vh;
+    margin-left: -40px;
+}
+/* menu style start */
+section.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 15px;
+}
+
+nav a {
+    font-size: 25px;
+    font-weight: 500;
+    color: #333;
+    margin-right: 25px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: crimson;
+}
+/* menu style end */
+
+/* home style start */
+section.Home {
+    width: 500px;
+    padding-left: 62%;
+    margin-top: 14%;
+}
+
+.homedsc h1 {
+    font-size: 45px;
+}
+.homedsc h1 span 
+{color: crimson;
+}
+
+.homedsc p {
+    font-size: 20px;
+    color: #333;
+}
+
+.btn {
+    text-align: center;
+}
+a.btn1 {
+    font-size: 20px;
+    text-decoration: none;
+    background: crimson;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 8px;
+}
+a.btn2 {
+    font-size: 20px;
+    text-decoration: none;
+    background: crimson;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 8px;
+}
+a.btn1:hover{
+    background: black;
+}
+
+a.btn2:hover{
+    background: black;
+}
+/* home style end */
+
+/* demos style start */
+.Demos{
+    background-image: url(images/demo-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 80vh;
+}
+
+.demoDesc {
+    width: 500px;
+    text-align: center;
+    padding-left: 30%;
+    padding-top: 10%;
+}
+
+.demoDesc h2 {
+    font-size: 35px;
+}
+
+.demoDesc h2 span {
+    color: crimson;
+}
+
+.demoDesc p {
+    font-size: 17px;
+    line-height: 25px;
+    color: #666;
+}
+
+.container{
+    width: 1280px;
+    margin: 100px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container .box{
+    position: relative;
+    width: 300px;
+    height: 228px;
+    background: #ff0;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.container .box .imgbox{
+    position: relative;
+    overflow: hidden;
+}
+
+.container .box .imgbox img{
+    max-width: 100%;
+    transition: transform 2s;
+}
+
+.container .box:hover .imgbox img{
+    
+    transform: scale(1.2);
+}
+.container .box .details{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,.8);
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+
+.container .box:hover .details{
+    transform: scaleY(1);
+}
+
+.container .box .details .content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+
+.container .box .details .content h2{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #ff0;
+}
+
+.container .box .details .content p{
+    margin: 10px 0 0;
+    padding: 0;
+}
+/* demos style end */
+
+/* option style start */
+section.option {
+    background: #333;
+}
+
+.sectitle {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.sectitle h2 {
+    font-size: 40px;
+    color: #fff;
+}
+
+.sectitle h2 span {
+    color: crimson;
+}
+
+.items {
+    padding-left: 12%;
+    padding-bottom: 5%;
+}
+.container{
+    width: 1280px;
+    margin: 100px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container .pbox{
+    position: relative;
+    width: 300px;
+    height: 228px;
+    background: #ff0;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.container .pbox .pimgbox{
+    position: relative;
+    overflow: hidden;
+}
+
+.container .pbox .pimgbox img{
+    max-width: 100%;
+    transition: transform 2s;
+}
+
+.container .pbox:hover .pimgbox img{
+    
+    transform: scaleY(1.3);
+}
+.container .pbox .pdetails{
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    bottom: 10px;
+    right: 10px;
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+
+.container .pbox:hover .pdetails{
+    transform: scaleY(1);
+}
+
+.container .pbox .pdetails .pcontent{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+
+.pdetails .pcontent .btn{
+    position: relative;
+    font-size: 20px;
+    background: none;
+    border: 2px solid crimson;
+    border-radius: 8px; 
+    padding: 12px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "montserat", sans-serif;
+    min-width: 200px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+}
+.pdetails .pcontent .btn:hover{
+    color: #fff;
+}
+.pdetails .pcontent .btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: crimson;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+.pdetails .pcontent .btn::before{
+    transform: scaleX(0);
+}
+.pdetails .pcontent .btn:hover::before{
+    transform: scaleX(1);
+}
+
+/* option style end */
+
+
+/* key style end */
+.Ksectitle {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.Ksectitle h2 {
+    font-size: 40px;
+}
+
+.Ksectitle h2 span {
+    color: crimson;
+}
+
+p.secsubtitle {
+    width: 350px;
+    padding-left: 36%;
+    font-size: 20px;
+    color: #666;
+}
+
+.Features {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.FeaturesImg {
+    width: 250px;
+    background: #FFFFFF;
+    text-align: center;
+    padding-top: 27px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 5px 5px grey;
+
+}
+/* key style end */
+
+/* FOOTER STYLE START */
+
+footer#footerbg {
+    background: #333;
+    text-align: center;
+    padding: 50px 0px;
+    margin-top: 30px;
+}
+
+footer#footerbg h1 {
+    font-size: 40px;
+    color: white;
+}
+
+footer#footerbg h1 span {
+    color: crimson;
+}
+
+a.footerbtn {
+    display: inline-block;
+    font-size: 25px;
+    text-decoration: none;
+    background: none;
+    color: #fff;
+    padding: 16px 20px;
+    border: 2px solid #fff;
+    border-radius: 32px;
+    margin-top: 10px;
+}
+
+a.footerbtn:hover{
+    background: crimson;
+}
+/* FOOTER STYLE END */
